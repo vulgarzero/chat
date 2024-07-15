@@ -70,7 +70,7 @@ const Answer: FC<IAnswerProps> = ({
   isResponsing,
   allToolIcons,
 }) => {
-  const { id, content, feedback, agent_thoughts} = item
+  const { id, content, feedback, agent_thoughts, workflowProcess} = item
   const isAgentMode = !!agent_thoughts && agent_thoughts.length > 0
 
   const { t } = useTranslation()

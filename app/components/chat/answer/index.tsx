@@ -184,7 +184,7 @@ const Answer: FC<IAnswerProps> = ({
               {(isResponsing && (isAgentMode ? (!content && (agent_thoughts || []).filter(item => !!item.thought || !!item.tool).length === 0) : !content))
                 ? (
                   <div className='flex items-center justify-center w-6 h-5'>
-                    <LoadingAnim type='text' />
+                    <LoadingAnim type='' />
                   </div>
                 )
                 : (isAgentMode
